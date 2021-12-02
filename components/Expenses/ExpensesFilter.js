@@ -4,9 +4,9 @@ import "./ExpensesFilter.css";
 
 const ExpensesFilter = (props) => {
   const dropdownChangeHandler = (event) => {
-    props.onChangeFilter(
-      event.target.value
-    ); /* using props i can call the function 'onChangeFilter' from the parent component Expense (for example)
+    props.onChangeFilter(event.target.value);
+
+    /* using props i can call the function 'onChangeFilter' from the parent component Expense (for example)
      and do a lifting up content to the parent component. In this case */
   };
 
